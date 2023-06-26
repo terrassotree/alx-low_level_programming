@@ -1,4 +1,4 @@
-#include 'main.h'
+#include "main.h"
 
 /**
  * _putchar - Writes a character to the standard output (stdout)
@@ -8,9 +8,6 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 /**
  * update_value - Updates the value pointed to by a given pointer to 98.
