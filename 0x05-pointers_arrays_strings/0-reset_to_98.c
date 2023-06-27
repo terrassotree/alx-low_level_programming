@@ -1,37 +1,11 @@
 #include "main.h"
-
 /**
- * _putchar - Writes a character to the standard output (stdout)
- * @c: The character to be written
- *
- * Return: On success, returns the character written.
- * On error, -1 is returned, and errno is set appropriately.
+ * reset_to_98 - a function that takes a pointer to an int as parameter
+ * and updates the value it points to to 98
+ * @n: input
+ * Return: n
  */
-int _putchar(char c)
-
-/**
- * update_value - Updates the value pointed to by a given pointer to 98.
- * @ptr: Pointer to an int to be updated
- */
-void update_value(int *ptr)
+void reset_to_98(int *n)
 {
-	*ptr = 98;
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	int num = 0;
-	int *ptr = &num;
-
-	update_value(ptr);
-
-	_putchar(*ptr + '0');
-	_putchar('\n');
-
-	return (0);
+	*n = 98;
 }
