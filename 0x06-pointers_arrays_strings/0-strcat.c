@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * strcat is a the string concatenation function.
+ * The strcat function appends the source string src to the destination string dest,
+ * overwriting the terminating null byte of the destination string,
+ * and then adds a new terminating null byte at the end.
  */
-int main(void);
 char *_strcat(char *dest, char *src)
 {
 	char *dest_start = dest;
