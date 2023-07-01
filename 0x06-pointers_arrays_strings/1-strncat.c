@@ -8,10 +8,12 @@
 * Return: A pointer to the resulting string dest.
 *
 * The _strncat function appends the characters from the source string, src,
-* to the end of the destination string, dest. It will use at most n bytes from src,
+* to the end of the destination string, dest. It will use at
+* most n bytes from src,
 * and src does not need to be null-terminated if it contains n or more bytes.
 * The resulting string in dest is null-terminated.
-* This function does not rely on the standard library or functions like printf or puts.
+* This function does not rely on the standard
+* ilibrary or functions like printf or puts.
 * The code follows the Betty style guidelines for clean and readable code.
 */
 char *_strncat(char *dest, char *src, int n)
