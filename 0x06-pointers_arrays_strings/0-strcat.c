@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * File: 0-strcat.c
- * Description: Custom implementation of the strcat function.
- * The _strcat function appends the source 'src' string to the destination string 'dest'.
- * It overwrites the terminating null byte of the destination string and then adds a new terminating null byte at the end.
- * Returns: A pointer to the resulting string.
+*_strcat - function that concatenates two strings.
+*@dest: pointer to destination string.
+*@src: pointer to source string.
+*
+*Return: pointer to destination string.
  */
 char *_strcat(char *dest, char *src)
 {
