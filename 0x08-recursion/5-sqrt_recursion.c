@@ -1,23 +1,22 @@
+#include "main.h"
 /**
- * _pow_recursion - Calculates the value of x raised to the power of y
- * @x: The base number
- * @y: The exponent
+ * _sqrt_recursion - Calculates the natural square root of a number
+ * @n: The number for which to calculate the square root
  *
  * Description:
- * The _pow_recursion function calculates
- * the value of x raised to the power of y.
- * It takes two integers 'x' and 'y' as
- * parameters and recursively multiplies 'x'
- * by itself (x * x) 'y' times until 'y' reaches 0. If 'y' is less than 0, the
- * function returns -1 to indicate an error.
+ * The _sqrt_recursion function calculates the natural square root of a given
+ * number. It takes an integer parameter 'n' and recursively checks if a number
+ * squared is equal to 'n'. If found, it returns the square root of 'n'. If 'n'
+ * does not have a natural square root, the function returns -1.
  *
- * Return: The value of x raised to the power of y, or -1 if 'y' is less than 0
+ * Return: The natural square root of 'n', or -1 if 'n'
+ * does not have a square root
  */
-int _pow_recursion(int x, int y)
+int _sqrt_recursion(int n)
 {
-	if (y < 0)
+	if (n < 0)
 		return (-1);
-	if (y == 0)
-		return (1);
-	return (x * _pow_recursion(x, y - 1));
+	if (n == 0 || n == 1)
+		return (n);
+	return (_sqrt_recursion(n));
 }
